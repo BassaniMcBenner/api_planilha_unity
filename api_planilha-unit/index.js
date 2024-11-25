@@ -6,8 +6,8 @@ const app = express();
 const port = 6000;
 
 // Configuração do Supabase
-const supabaseUrl = process.env.SUPABASE_URL// Substitua pelo seu URL do Supabase
-const supabaseKey = process.env.SUPABASE_KEY; // Substitua pela sua chave de API
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Endpoint para buscar dados por 'codigo'
